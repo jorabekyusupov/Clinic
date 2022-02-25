@@ -1,0 +1,43 @@
+INSERT INTO public.permissions (id, created_at,updated_at,"type",created_by,updated_by,"name") VALUES
+	 (1, NOW(), NOW(), 0, 1, 1, 'permission-update'),
+	 (2, NOW(), NOW(), 0, 1, 1, 'permission-delete'),
+	 (3, NOW(), NOW(), 0, 1, 1, 'permission-index'),
+	 (4, NOW(), NOW(), 0, 1, 1, 'permission-create'),
+	 (5, NOW(), NOW(), 0, 1, 1, 'admin-menu'),
+	 (6, NOW(), NOW(), 0, 1, 1, 'user-index'),
+	 (7, NOW(), NOW(), 0, 1, 1, 'role-index'),
+	 (8, NOW(), NOW(), 0, 1, 1, 'role_permission-update'),
+	 (9, NOW(), NOW(), 0, 1, 1, 'role-create'),
+	 (10, NOW(), NOW(), 0, 1, 1, 'role-update'),
+	 (11, NOW(), NOW(), 0, 1, 1, 'role-delete'),
+	 (12, NOW(), NOW(), 0, 1, 1, 'user-create'),
+	 (13, NOW(), NOW(), 0, 1, 1, 'user-update'),
+	 (14, NOW(), NOW(), 0, 1, 1, 'user_role-update'),
+	 (15, NOW(), NOW(), 0, 1, 1, 'user-delete'),
+	 (16, NOW(), NOW(), 0, 1, 1, 'content_word-index'),
+	 (17, NOW(), NOW(), 0, 1, 1, 'page_list-index'),
+	 (18, NOW(), NOW(), 0, 1, 1, 'organization-index');
+INSERT INTO public.permissions (id, created_at,updated_at,"type",created_by,updated_by,"name") VALUES
+	 (19, NOW(), NOW(), 0, 1, 1, 'organization_type-index'),
+	 (20, NOW(), NOW(), 0, 1, 1, 'specialty-index'),
+	 (21, NOW(), NOW(), 0, 1, 1, 'specialty_type-index'),
+	 (22, NOW(), NOW(), 0, 1, 1, 'doctor-index'),
+	 (23, NOW(), NOW(), 0, 1, 1, 'service-index'),
+	 (24, NOW(), NOW(), 0, 1, 1, 'service_classes-index'),
+	 (25, NOW(), NOW(), 0, 1, 1, 'service_sections-index'),
+	 (26, NOW(), NOW(), 0, 1, 1, 'service_subsections-index'),
+	 (27, NOW(), NOW(), 0, 1, 1, 'service_class-create'),
+	 (28, NOW(), NOW(), 0, 1, 1, 'service_class-update'),
+	 (29, NOW(), NOW(), 0, 1, 1, 'service_class-delete'),
+	 (30, NOW(), NOW(), 0, 1, 1, 'service_section-create'),
+	 (31, NOW(), NOW(), 0, 1, 1, 'service_section-update'),
+	 (32, NOW(), NOW(), 0, 1, 1, 'service_section-delete'),
+	 (33, NOW(), NOW(), 0, 1, 1, 'service_subsection-create'),
+	 (34, NOW(), NOW(), 0, 1, 1, 'service_subsection-update'),
+	 (35, NOW(), NOW(), 0, 1, 1, 'service_subsection-delete'),
+
+	 (36, NOW(), NOW(), 0, 1, 1, 'service-create'),
+	 (37, NOW(), NOW(), 0, 1, 1, 'service-update'),
+	 (38, NOW(), NOW(), 0, 1, 1, 'service-delete');
+
+SELECT setval('permissions_id_seq', max(id)) FROM public.permissions;
